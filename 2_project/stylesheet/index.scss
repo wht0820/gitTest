@@ -53,13 +53,14 @@
                         border-top: 1px solid #f0f1f2;
                         #expenditure_a{
                             margin:0 auto;
-                            width:1200px;
+                            width:1203px;
                             padding-top:24px;
                             #expenditure_b{
                                 width:400px;
                                 height:246px;
-                                background:yellow;
+                                border-bottom: 1px solid #f0f1f2;
                                 float:left;
+                                border-right:1px solid #f0f1f2;
                                 img{
                                     width:160px;
                                     height:160px;
@@ -67,37 +68,186 @@
                                     display:inline-block;
                                 }
                                 #expenditure_g{
-                                    width:200px;
-                                    height:240px;
-                                    display:inline-block;
-                                    float:left;
-                                    // float:right;
-                                    background:red;
+                                    width:240px;
+                                    height:246px;
+                                    // display:inline-block;
+                                    float:right;
                                     position:relative;
                                    .li_aa{
                                         display:inline-block;
+                                        color: #3b3e40;
                                         font-size:16px;
-                                        line-height:16px;
+                                        line-height:24px;
+                                        margin-bottom: 8px;
+                                        font-weight: 600;
+                                        margin:0 0 8px 15px;
                                    }
+                                    .li_ab{
+                                        color: #6c7073;
+                                        font-size: 12px;
+                                        line-height: 16px;
+                                        margin:0 0 16px 15px;
+                                        padding-right: 16px;
+                                    }
+                                    .li_ac{
+                                        color: #3b3e40;
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        margin:0 0 8px 15px;
+                                        display: inline-block;
+                                    }
+                                    .li_ad{
+                                        @extend .li_ac;
+                                    }
+                                    .li_af{
+                                        @extend .li_ac;
+                                    }
+                                    .li_ag{
+                                        @extend .li_ac;
+                                    }
                                 }
                             }
                             #expenditure_c{
                                 @extend #expenditure_b;
-                                background:skyblue;
+                                div{
+                                    @extend #expenditure_g;
+                                }
                             }
                             #expenditure_d{
                                 @extend #expenditure_b;
+                                .TMD_1{
+                                    width:240px;
+                                    height:246px;
+                                    display:inline-block;
+                                    float:right;
+                                    position:relative;
+                                    .li_aa{
+                                        display:inline-block;
+                                        color: #3b3e40;
+                                        font-size:16px;
+                                        line-height:24px;
+                                        margin-bottom: 8px;
+                                        font-weight: 600;
+                                        margin:0 0 8px 15px;
+                                    }
+                                    .li_ab{
+                                        color: #6c7073;
+                                        font-size: 12px;
+                                        line-height: 16px;
+                                        margin:0 0 16px 15px;
+                                        padding-right: 16px;
+                                    }
+                                    .li_ac{
+                                        color: #3b3e40;
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        margin:0 0 8px 15px;
+                                        display: inline-block;
+                                    }
+                                    .li_ad{
+                                        @extend .li_ac;
+                                    }
+                                    .li_af{
+                                        @extend .li_ac;
+                                    }
+                                    .li_ag{
+                                        @extend .li_ac;
+                                    }
+                                }
                             }
                             #expenditure_e{
                                 @extend #expenditure_b;
                                 padding-top:24px;
                                 height:222px;
-                                background:skyblue;
+                                .TMD_2{
+                                    width:240px;
+                                    height:246px;
+                                    display:inline-block;
+                                    float:right;
+                                    position:relative;
+                                    .li_aa{
+                                        display:inline-block;
+                                        color: #3b3e40;
+                                        font-size:16px;
+                                        line-height:24px;
+                                        margin-bottom: 8px;
+                                        font-weight: 600;
+                                        margin:0 0 8px 15px;
+                                    }
+                                    .li_ab{
+                                        color: #6c7073;
+                                        font-size: 12px;
+                                        line-height: 16px;
+                                        margin:0 0 16px 15px;
+                                        padding-right: 16px;
+                                    }
+                                    .li_ac{
+                                        color: #3b3e40;
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        margin:0 0 8px 15px;
+                                        display: inline-block;
+                                    }
+                                    .li_ad{
+                                        @extend .li_ac;
+                                    }
+                                    .li_af{
+                                        @extend .li_ac;
+                                    }
+                                    .li_ag{
+                                        @extend .li_ac;
+                                    }
+                                }
                             }
                             #expenditure_f{
                                 padding-top:24px;
                                 height:222px;
                                 @extend #expenditure_b;
+                                div{
+                                    width:240px;
+                                    height:246px;
+                                    display:inline-block;
+                                    float:right;
+                                    position:relative;
+                                    .li_aa{
+                                        display:inline-block;
+                                        color: #3b3e40;
+                                        font-size:16px;
+                                        line-height:24px;
+                                        margin-bottom: 8px;
+                                        font-weight: 600;
+                                        margin:0 0 8px 15px;
+                                    }
+                                    .li_ab{
+                                        color: #6c7073;
+                                        font-size: 12px;
+                                        line-height: 16px;
+                                        margin:0 0 16px 15px;
+                                        padding-right: 16px;
+                                    }
+                                    .li_ac{
+                                        color: #3b3e40;
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        margin:0 0 8px 15px;
+                                        display: inline-block;
+                                    }
+                                    .li_ad{
+                                        @extend .li_ac;
+                                    }
+                                    .li_af{
+                                        @extend .li_ac;
+                                    }
+                                    .li_ag{
+                                        @extend .li_ac;
+                                    }
+                                }
+                            }
+                            #expenditure_z{
+                                width:400px;
+                                height:246px;
+                                border-bottom: 1px solid #f0f1f2;
+                                float:left;
                             }
                         }
                     }
