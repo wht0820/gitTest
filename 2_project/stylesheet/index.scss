@@ -1,0 +1,440 @@
+@import "reset";
+@import "mixin";
+//nav
+#nav_1{
+    width:100%;
+    height:64px;
+    position:absolute;
+    top:0;
+    left:0;
+    background:0;
+    z-index: 900;
+    #nav_2{
+        width:1200px;
+        display: flex;
+        margin:0 auto;
+        #nav_3_1{
+            width:84px;
+            float: none;
+            #nav_4{
+                display: inline-block;
+                padding: 19px 39px 19px 0;
+                #nav_5{
+                    width: 45px;
+                    height: 26px;
+                    vertical-align: middle;
+                    display:inline-block;
+                    background-size: cover;
+                    background-image:url("https://www1.djicdn.com/dps/e5f926c322d7fdf80eafe38a0d12000c.svg");
+                }
+            }
+        }
+        #nav_3_2{
+            display:flex;
+            width:100%;
+            justify-content:space-between;
+            #nav_3_2_1{
+                display:flex;
+                justify-content:space-between;
+                font-size:14px;
+                line-height:14px;
+                .a{
+                    height:60px;
+                    padding:1px;
+                    #expenditure{
+                        height:542px;
+                        width:100%;
+                        background:#fff;
+                        position:absolute;
+                        // display:none;
+                        top:100%;
+                        left:0;
+                        z-index:1100;
+                        border-top: 1px solid #f0f1f2;
+                        #expenditure_a{
+                            margin:0 auto;
+                            width:1200px;
+                            padding-top:24px;
+                            #expenditure_b{
+                                width:400px;
+                                height:246px;
+                                background:yellow;
+                                float:left;
+                                img{
+                                    width:160px;
+                                    height:160px;
+                                    display:block;
+                                    display:inline-block;
+                                }
+                                #expenditure_g{
+                                    width:200px;
+                                    height:240px;
+                                    display:inline-block;
+                                    float:left;
+                                    // float:right;
+                                    background:red;
+                                    position:relative;
+                                   .li_aa{
+                                        display:inline-block;
+                                        font-size:16px;
+                                        line-height:16px;
+                                   }
+                                }
+                            }
+                            #expenditure_c{
+                                @extend #expenditure_b;
+                                background:skyblue;
+                            }
+                            #expenditure_d{
+                                @extend #expenditure_b;
+                            }
+                            #expenditure_e{
+                                @extend #expenditure_b;
+                                padding-top:24px;
+                                height:222px;
+                                background:skyblue;
+                            }
+                            #expenditure_f{
+                                padding-top:24px;
+                                height:222px;
+                                @extend #expenditure_b;
+                            }
+                        }
+                    }
+
+                    #explore{
+                        display:none;
+                        ul{
+                            background:#fff;
+                        }
+                        li{
+                            font-size:12px;
+                        }
+                        a{
+                            display:inline-block;
+                            padding:16px 20px;
+                            text-align:center;
+                        }
+                    }
+                }
+                
+                #nav_a{
+                    display:inline-block;
+                    font-weight: 600;
+                    color:#fff;
+                    padding:25px 16px;
+                }
+            }
+            #nav_3_2_2{
+                display:flex;
+                align-items:center;
+                justify-content:space-between;
+                .nav_ul_li1{
+                    background-image:linear-gradient(-180deg,#42b7ff,#1897f2);
+                    border-radius:4px;
+                    margin-right:34px;
+                    .nav_a_2{
+                        height:30px;
+                        width:59px;
+                        display:block;
+                        font-size:14px;
+                        font-weight: 600;
+                        color:#fff;
+                        text-align:center;
+                        line-height:30px;
+                    }
+                }
+                .iconfont{
+                   font-size:24px;
+                   color:#fff;
+                   margin:12px;
+                }
+            }
+        }   
+    }
+}
+//nav_slideshow
+.section_1{
+    width:100%;
+    height:800px;
+    background:black;
+    z-index:800;
+    .section_2_1{
+        position:relative;
+        .section_3_1{
+            // display:none;
+            height:800px;
+            width:1404px;
+            .section_4_2_0{
+                padding-top: 112px;
+                height:688px;
+                width:100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: auto 800px;
+                background-image:url("../images/a4.jpg");
+            }
+            .section_4_1{
+                position:absolute;
+                left: 0;
+                top: 0;
+                display: block;
+                height: 100%;
+                width: 100%;
+                cursor: pointer;
+                z-index: 300;
+            }
+        }
+        .section_3_2{
+            display:none;
+            // display:block;
+            @extend .section_3_1;
+            .section_4_2{
+                @extend .section_4_1;
+            }
+            .section_4_2_1{
+                @extend .section_4_2_0;
+                background-image:url("../images/a1.jpg");
+            }
+        }
+        .section_3_3{
+            display:none;
+            // display:block;
+            @extend .section_3_1;
+            .section_4_3{
+                @extend .section_4_1;
+            }
+            .section_4_2_2{
+                @extend .section_4_2_0;
+                background-image:url("../images/a2.jpg");
+            }
+        }
+        .section_3_4{
+            display:none;
+            // display:block;
+            @extend .section_3_1;
+            .section_4_4{
+                @extend .section_4_1;
+            }
+            .section_4_2_3{
+                @extend .section_4_2_0;
+                background-image:url("../images/a3.jpg");
+            }
+        }
+        .section_3_5{
+            display:none;
+            // display:block;
+            @extend .section_3_1;
+            .section_4_5{
+                @extend .section_4_1;
+            }
+            .section_4_2_4{
+                @extend .section_4_2_0;
+                background-image:url("../images/a4.jpg");
+            }
+        }
+        .section_3_6{
+            display:none;
+            // display:block;
+            @extend .section_3_1;
+            .section_4_6{
+                @extend .section_4_1;
+            }
+            .section_4_2_5{
+                @extend .section_4_2_0;
+                background-image:url("../images/a1.jpg");
+            }
+        }
+        //two_btn
+        .two_btn_left{
+            height:96px;
+            width:48px;
+            background:black;
+            opacity:0.3;
+            position:absolute;
+            top:50%;
+            margin-top:-64px;
+            z-index:400;
+            border-top-right-radius:8px;
+            border-bottom-right-radius:8px;
+            cursor:pointer;
+        }
+        .two_btn_right{
+            @extend .two_btn_left;
+            right:0;
+            transform:rotate(180deg);
+            font-size:30px;
+        }
+        //slideshow_introduce
+        .slideshow_introduce{
+            position:absolute;
+            bottom:30px;
+            left:50%;
+            margin-left:-600px;
+            z-index:850;
+            .S_I_1{
+                position:relative;
+                height:140px;
+                li{
+                    a{
+                        padding:6px 40px;
+                        display:block;
+                        font-size: 14px;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+    }
+}
+//shopping guide
+.section_2{
+    margin-top:16px;
+    padding:0 16px;
+    height: 576px;
+    .section_a_1{
+        position:relative;
+        width:678px;
+        height: 576px;
+        float:left;
+        background-image:url("https://www1.djicdn.com/cms/uploads/ce10ce8529f9616f126fd7a9f40f637f.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .section_a_a{
+            position:absolute;
+            left: 0;
+            top: 0;
+            display:block;
+            width:100%;
+            height:100%;
+            z-index: 300;
+        }
+        .section_a_1_2{
+            // margin:auto;
+            text-align:center;
+            padding-top:48px;
+            .section_a_1_3{
+                height:22px;
+                color:rgba(0,0,0,.45);
+            }
+            img{
+                height:32px;
+                display:block;
+                margin:16px auto;
+            }
+            h5{
+                font-size:20px;
+                line-height:24px;
+            }
+            a{
+                display: inline-flex;
+                margin:24px 0 0 8px;
+                color: rgba(0,0,0,.85);
+            }
+        }
+    }
+    .section_a_2{
+        @extend .section_a_1;
+        float:right;
+        background-image:url("https://www1.djicdn.com/cms/uploads/0c1212cd7d879b649662b88f9f69674f.webp");
+        .section_a_a2{
+            @extend .section_a_a;
+            right:0;
+        }
+        .section_a_2_2{
+            @extend .section_a_1_2;
+            .section_a_2_3{
+                @extend .section_a_1_3;
+            }
+        }
+    }
+}
+//shopping guide bottom 
+.section_B_1{
+    margin-top:16px;
+    padding:0 16px;
+    height: 576px;
+    .section_B_2{
+        position:relative;
+        width:678px;
+        height:576px;
+        float:left;
+        background-image:url("https://www1.djicdn.com/cms/uploads/b69891da2587e82021156c6889baac7b.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .section_B_a{
+            position:absolute;
+            left: 0;
+            top: 0;
+            display:block;
+            width:100%;
+            height:100%;
+            z-index: 300;
+        }
+        .section_B_1_2{
+            text-align:center;
+            padding-top:48px;
+            .section_B_1_3{
+                height:22px;
+                color:rgba(0,0,0,.45);
+            }
+            .TT_img{
+                margin-top: 8px;
+                margin-bottom: 8px;
+                font-size: 40px;
+                font-weight: 500;
+            }
+            h5{
+                font-size:20px;
+                line-height:24px;
+            }
+            a{
+                display: inline-flex;
+                margin:24px 0 0 8px;
+                color: rgba(0,0,0,.85);
+            }
+        }
+    }
+    .section_B_3{
+        @extend .section_B_2;
+        background-image:url("https://www1.djicdn.com/cms/uploads/95f847887ffd6c592970f0f6b634750f.webp");
+        float:right;
+        .section_B_a2{
+            @extend .section_B_a;
+        }
+        .section_B_2_2{
+            @extend .section_B_1_2;
+            .section_B_2_3{
+                @extend .section_B_1_3;
+            }
+            .TT_img2{
+                @extend .TT_img;
+            }
+        }
+    }
+}
+//dynamic condition
+.section_C_1{
+    position:relative;
+    margin-top:64px;
+    height:720px;
+    width:1404px;
+    // overflow:hidden;
+    .section_C_3{
+        position:absolute;    
+        height:720px;  
+        li{
+            width:1404px;
+            height:720px;
+            float:left;
+            a{
+                img{
+                    width:100%;
+                    height:100%;
+                }
+            }
+        }
+    }
+}
