@@ -48,7 +48,7 @@
                         width:100%;
                         background:#fff;
                         position:absolute;
-                        // display:none;
+                        display:none;
                         top:100%;
                         left:0;
                         z-index:1100;
@@ -317,6 +317,7 @@
             // display:none;
             height:800px;
             width:1404px;
+            
             .section_4_2_0{
                 padding-top: 112px;
                 height:688px;
@@ -324,7 +325,7 @@
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: auto 800px;
-                background-image:url("../images/a4.jpg");
+                background-image:url("../images/a1.jpg");
             }
             .section_4_1{
                 position:absolute;
@@ -346,7 +347,7 @@
             }
             .section_4_2_1{
                 @extend .section_4_2_0;
-                background-image:url("../images/a1.jpg");
+                background-image:url("../images/a2.jpg");
             }
         }
         .section_3_3{
@@ -358,7 +359,7 @@
             }
             .section_4_2_2{
                 @extend .section_4_2_0;
-                background-image:url("../images/a2.jpg");
+                background-image:url("../images/a3.jpg");
             }
         }
         .section_3_4{
@@ -370,7 +371,7 @@
             }
             .section_4_2_3{
                 @extend .section_4_2_0;
-                background-image:url("../images/a3.jpg");
+                background-image:url("../images/a4.jpg");
             }
         }
         .section_3_5{
@@ -382,19 +383,7 @@
             }
             .section_4_2_4{
                 @extend .section_4_2_0;
-                background-image:url("../images/a4.jpg");
-            }
-        }
-        .section_3_6{
-            display:none;
-            // display:block;
-            @extend .section_3_1;
-            .section_4_6{
-                @extend .section_4_1;
-            }
-            .section_4_2_5{
-                @extend .section_4_2_0;
-                background-image:url("../images/a1.jpg");
+                background-image:url("../images/a5.jpg");
             }
         }
         //two_btn
@@ -404,36 +393,71 @@
             background:black;
             opacity:0.3;
             position:absolute;
+            cursor: pointer;
             top:50%;
+            display:none;
             margin-top:-64px;
             z-index:400;
             border-top-right-radius:8px;
             border-bottom-right-radius:8px;
-            cursor:pointer;
+            .two_btn_left_1{
+                text-align:center;
+                line-height:96px;
+                z-index:500;
+                font-size:30px;
+                color:#fff;
+            }
         }
+        
         .two_btn_right{
-            @extend .two_btn_left;
+            height:96px;
+            width:48px;
+            cursor: pointer;
+            background:black;
+            opacity:0.3;
+            position:absolute;
+            top:50%;
             right:0;
-            transform:rotate(180deg);
+            display:none;
+            margin-top:-64px;
+            z-index:400;
+            border-top-left-radius:8px;
+            border-bottom-left-radius:8px;
             font-size:30px;
+            .two_btn_right_1{
+                text-align:center;
+                line-height:96px;
+                z-index:500;
+                font-size:30px;
+                color:#fff;
+            }
         }
         //slideshow_introduce
         .slideshow_introduce{
             position:absolute;
             bottom:30px;
             left:50%;
+            // top:-100px;
             margin-left:-600px;
             z-index:850;
             .S_I_1{
                 position:relative;
-                height:140px;
+                height:140px;              
                 li{
-                    a{
-                        padding:6px 40px;
-                        display:block;
-                        font-size: 14px;
-                        color:#fff;
-                    }
+                    padding:6px 40px;
+                    display:block;
+                    font-size: 14px;
+                    color:#fff;
+                    cursor: pointer;
+                    // display:none;
+                }
+                .op{
+                    opacity:1;
+                    display:block;
+                }
+                .og{
+                    opacity:0.5;
+                    display:block; 
                 }
             }
         }
