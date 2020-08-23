@@ -14,46 +14,48 @@ define(["jquery"], function($){
         }
     }
 
+
     function carousel(){
-        var aBtns = $("slideshow_introduce").find("ul li");
+        var Ul = $(".section_C_1").find("ul");
         var iNow = 0; 
         var timer = null;
-        $("#play")
-          .mouseenter(function () {
-            clearInterval(timer);
-          })
-          .mouseleave(function () {
-            timer = setInterval(function () {
-              iNow++;
-              tab();
-            }, 2000);
-          });
-
+        var oli = $(".section_C_1").find("ol li");
+        // $(".section_C_1")
+        clearInterval(timer);
         timer = setInterval(function () {
-          iNow++;
-          tab();
-        }, 2000);
+            iNow++;
+            tab();
+        }, 5000);
 
-        //给所有的按钮添加点击
-        aBtns.click(function () {
+        oli.click(function(){
           iNow = $(this).index();
           tab();
-        });
+        })
 
         function tab() {
-          //删除class名
-          aBtns.removeClass("active").eq(iNow).addClass("active");
-          if (iNow == aBtns.size()) {
-            aBtns.eq(0).addClass("active");
-          }
-
-          oUl.animate({ top: -150 * iNow }, 500, function () {
-            if (iNow == aBtns.size()) {
-              iNow = 0;
-              oUl.css("top", 0);
+            oli.removeClass("ccs").eq(iNow ).addClass("ccs");
+            if(iNow == oli.size()){
+              oli.eq(0).addClass("ccs");
             }
-          });
+            Ul.animate({ left:-1404 * iNow }, 500, function(){
+                if(iNow == oli.size()){
+                    iNow = 0;
+                    Ul.css("left", 0);
+                }
+            });
         }
+
+        $(".section_C_1").hover(function(){  
+                $("#div22").fadeTo(500, 0.3, function(){})
+        }, function(){
+            $("#div22").fadeTo(500, 0, function(){})
+        })
+        $(".section_C_1").hover(function(){  
+            $("#div23").fadeTo(500, 0.3, function(){})
+            }, function(){
+            $("#div23").fadeTo(500, 0, function(){})
+        })
+
     }
 
     return {
